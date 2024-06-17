@@ -1,0 +1,61 @@
+
+.lContainer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-image: url('https://www.americanexpress.com/en-us/travel/discover/photos/300881/36744/1600/Sunset%5Fat%5FTovolea.JPG?ch=560');
+    background-size: cover;
+    background-position: center;
+    color: #ffffff; /* Set text color for contrast */
+}
+.lInput, .lInput2 {
+    box-shadow: 0 0 16px 1px rgba(10, 10, 10, 0.2);
+    animation: wobble 0.3s ease-in;
+    position: relative;
+    bottom: 50px; 
+    background-color: var(--primary-color);
+    color: var(--color);
+    display: block;
+    padding: 10px; 
+    border-radius: 5px;
+    outline: none;
+    font-size: 20px; 
+    font-weight: bold;
+    width: 500px; 
+    cursor: pointer;
+    margin-bottom: 10rem; 
+    transition: all 0.1s ease-in-out;
+}
+
+.lButton {
+    border: none;
+    justify-content: center;
+    box-shadow: 0 0 16px 1px rgba(45, 7, 101, 0.2);
+    padding: 8px 50px; 
+    background-color: rgb(31, 18, 215);
+    color: wheat;
+    font-size: 18px; /* Adjust font size */
+    font-weight: bold;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    cursor: pointer;
+    border-radius: 15px;
+    margin-top: 1rem; /* Adjust margin */
+}
+
+@media (max-width: 768px) {
+    .lInput, .lInput2 {
+        width: 160px; /* Adjust for smaller screens */
+    }
+    .lButton {
+        padding: 8px 30px; /* Adjust for smaller screens */
+    }
+}
+@media (max-width: 768px) {
+    .lInput, .lInput2 {
+        width: 160px; /* Adjust for smaller screens */
+    }
+    .lButton {
+        padding: 8px 30px; /* Adjust for smaller screens */
+    }
+}

@@ -9,6 +9,7 @@ import "./style/dark.scss";
 import { Children, useContext } from "react";
 import { DarkModeContext } from "./context/darkModeContext";
 import { AuthContext } from "./context/AuthContext copy";
+import { userColumns } from "./datatablesource";
 
 function App() {
   const { darkMode } = useContext(DarkModeContext);
@@ -41,7 +42,7 @@ function App() {
                 index
                 element={
                   <ProtectedRoute>
-                    <List />
+                    <List colums={userColumns} />
                   </ProtectedRoute>
                 }
               />

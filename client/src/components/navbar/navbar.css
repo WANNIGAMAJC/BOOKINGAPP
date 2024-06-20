@@ -1,6 +1,6 @@
 .navbar{
   height: 50px;
-  background-color: #003580;
+  background: white;
   display: flex;
   justify-content: center;
 }
@@ -8,7 +8,7 @@
 .navContainer{
   width: 100%;
   max-width: 1024px;
-  color: white;
+  color: black;
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -23,5 +23,25 @@
   border: none;
   padding: 5px 10px;
   cursor: pointer;
-  color: #003580;
+  color:#914159;
+}
+
+.logo{
+  background-color: green;
+  /*color: white;
+  font-weight: bold;
+  padding: 10px 5px;
+  border: none;
+  cursor: pointer;
+  border-radius: 5px;*/
+  color: white;
+  font-weight: 500;
+  border: none;
+  padding: 10px 20px; /* Adjusted padding for better appearance */
+  cursor: pointer;
+  border-radius: 5px; /* Rounded corners */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Add a shadow for depth */
+  transition: background-color 0.3s ease, transform 0.3s ease; /* Smooth transitions */
+  display: inline-block; /* Ensures consistent dimensions */
+  font-size: 16px; /* Font size for better readability */
 }

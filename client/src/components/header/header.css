@@ -1,9 +1,12 @@
 .header {
-  background-color: #003580;
+  background: url("https://5.imimg.com/data5/OV/YU/MY-4066069/hotel-landscaping.jpg");
   color: white;
   display: flex;
   justify-content: center;
   position: relative;
+  background-size: cover;
+	background-attachment: relative;
+  
 }
 
 .headerContainer {
@@ -39,18 +42,23 @@
 }
 
 .headerBtn {
-  background-color: #0071c2;
+  background-color: #a6b143; /* Base color */
   color: white;
   font-weight: 500;
   border: none;
-  padding: 10px;
+  padding: 10px 20px; /* Adjusted padding for better appearance */
   cursor: pointer;
+  border-radius: 5px; /* Rounded corners */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Add a shadow for depth */
+  transition: background-color 0.3s ease, transform 0.3s ease; /* Smooth transitions */
+  display: inline-block; /* Ensures consistent dimensions */
+  font-size: 16px; /* Font size for better readability */
 }
 
-.headerSearch {
+/*.headerSearch {
   height: 30px;
   background-color: white;
-  border: 3px solid #febb02;
+  border: 5px solid green;
   display: flex;
   align-items: center;
   justify-content: space-around;
@@ -60,7 +68,26 @@
   bottom: -25px;
   width: 100%;
   max-width: 1024px;
+}*/
+.headerSearch {
+  height: 50px;
+  background-color: rgba(255, 255, 255, 0.9);
+  border: 1px solid green;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  padding: 10px;
+  border-radius: 30px;
+  position: absolute;
+  bottom: -25px;
+  width: 90%;
+  max-width: 1024px;
+  transition: all 0.9s ease-in-out;
+  z-index: 10; /* Ensure the search bar is above other content */
 }
+
+
+
 
 .headerIcon {
   color: lightgray;
@@ -78,7 +105,7 @@
 }
 
 .headerSearchText {
-  color: lightgray;
+  color: black;
   cursor: pointer;
 }
 
@@ -92,7 +119,7 @@
   z-index: 2;
   position: absolute;
   top: 50px;
-  background-color: white;
+  background-color: black;
   color: gray;
   border-radius: 5px;
   -webkit-box-shadow: 0px 0px 10px -5px rgba(0, 0, 0, 0.4);
@@ -111,14 +138,14 @@
   align-items: center;
   gap: 10px;
   font-size: 12px;
-  color: black;
+  color:white;
 }
 
 .optionCounterButton {
   width: 30px;
   height: 30px;
-  border: 1px solid #0071c2;
-  color: #0071c2;
+  border: 1px solid #c20098;
+  color: #6b00c2;
   cursor: pointer;
   background-color: white;
 }

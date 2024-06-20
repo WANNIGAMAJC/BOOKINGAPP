@@ -8,11 +8,21 @@
   margin-bottom: 20px;
 }
 
-.siImg {
-  width: 200px;
-  height: 200px;
-  object-fit: cover;
+.siImg{
+  width: 250px;
+  margin:0 10px;
+  box-shadow: 0 0 20px 2px rgba(0, 0, 0, .1);
 }
+.siImg img{
+  display: block;
+  width: 100%;
+  border-radius: 5px;
+}
+.siImg :hover{
+  transform: scale(1.1);
+  z-index: 2;
+}
+
 
 .siDesc {
   display: flex;
@@ -99,7 +109,7 @@
 }
 
 .siCheckButton{
-  background-color: #0071c2;
+  background-color: blue;
   color: white;
   font-weight: bold;
   padding: 10px 5px;

@@ -100,8 +100,9 @@ const Hotel = () => {
             />
           </div>
         )}
+        <div class="bg-image"></div>
         <div className="hotelWrapper">
-          <button className="bookNow">Reserve or Book Now!</button>
+          
           <h1 className="hotelTitle">{data.name}</h1>
           <div className="hotelAddress">
             <FontAwesomeIcon icon={faLocationDot} />
@@ -116,12 +117,13 @@ const Hotel = () => {
           <div className="hotelImages">
             {data.photos?.map((photo, i) => (
               <div className="hotelImgWrapper" key={i}>
+                <div  className="hotelImg" >
                 <img
                   onClick={() => handleOpen(i)}
                   src={photo}
                   alt=""
-                  className="hotelImg"
-                />
+                 
+                /></div>
               </div>
             ))}
           </div>

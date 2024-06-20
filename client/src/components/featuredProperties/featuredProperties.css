@@ -14,9 +14,18 @@
 }
 
 .fpImg{
+  width: 500px;
+  margin:0 10px;
+  box-shadow: 0 0 20px 2px rgba(0, 0, 0, .1);
+}
+.fpImg img{
+  display: block;
   width: 100%;
-  height: 250px;
-  object-fit: cover;
+  border-radius: 5px;
+}
+.fpImg :hover{
+  transform: scale(1.1);
+  z-index: 2;
 }
 
 .fpName{

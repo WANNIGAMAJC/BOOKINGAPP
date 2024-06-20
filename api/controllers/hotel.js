@@ -52,10 +52,6 @@ export const getHotels = async (req, res, next) => {
     const minPrice = parseInt(min, 10) || 1;
     const maxPrice = parseInt(max, 10) || 9999999;
 
-    console.log("Parsed Limit:", parsedLimit);
-    console.log("Parsed Min Price:", minPrice);
-    console.log("Parsed Max Price:", maxPrice);
-
     const query = {
       ...others,
       cheapestPrice: { $gt: minPrice, $lt: maxPrice },
